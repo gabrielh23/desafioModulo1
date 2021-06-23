@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <!--Bootstrap css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+<body>
+    <!--Barra de navegação-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                  <img class="nav__logo" src="./img/logo.png" alt="Logo da empresa">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                  <button class="btn btn-custom" type="submit">Pesquisar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <main>
+      <!--Carousel----------->
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="carousel__img" src="./img/homem-fazendo-flexao.jpg" alt="Imagem homem fazendo flexão">
+      
+              <div class="container">
+                <div class="carousel-caption text-start">
+                  <h1>Seu corpo em forma</h1>
+                  <p>Faça treinamento funcional e faça seu corpo se mexer</p>
+                  <p><a class="btn btn-lg btn-custom" href="#">Saiba mais</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                  <img class="carousel__img" src="./img/academia.jpg" alt="Foto da academia">        
+      
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Nossa estrutura</h1>
+                  <p>Equipamentos de qualidade e uma grande variedades de exercicios</p>
+                  <p><a class="btn btn-lg btn-custom" href="#">Venha conhecer</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img class="carousel__img" src="./img/mulher-fazendo-ioga.jpg" alt="Imagem da mulher fazendo ioga">
+              <div class="container">
+                <div class="carousel-caption text-end">
+                  <h1>Aulas de Ioga</h1>
+                  <p>Venha fazer uma aula experimental de Ioga e conheça seu interior</p>
+                  <p><a class="btn btn-lg btn-custom" href="#">Aulas de Ioga</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+      </div>
+
+        <!--Descrições--------------------->
+        <div class="container marketing">
+
+          <div class="row">
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle marketing__img" src="./img/treinamento-funcional.jpg" alt="Imagem treinamento funcional">
+              <h2>Treinamento funcional</h2>
+              <p>O treinamento funcional baseia-se no movimento natural do ser humano como correr, pular e empurrar.</p>
+              <p><a class="btn" href="#">Saiba mais &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle marketing__img" src="./img/treinador.jpg" alt="Imagem do personal">
+              <h2>Treino fisico</h2>
+              <p>Treinamento de cada grupo muscular trabalhando duas vezes na semana usando aparelhos de academia</p>
+              <p><a class="btn" href="#">Saiba mais &raquo;</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img class="bd-placeholder-img rounded-circle marketing__img" src="./img/posicao-ioga.jpg" alt="Imagem demonstrativa do ioga">
+              <h2>Ioga</h2>
+              <p>É um conceito que se refere às tradicionais disciplinas físicas e mentais originárias da índia.</p>
+              <p><a class="btn" href="#">Saber mais &raquo;</a></p>
+            </div>
+          </div>
+    </main>
+        
+    <!--Parallax----------------->
+    <section>
+      <div class="parallax-header">
+          <div class="container">
+          <div class="header-content">
+              <p class="parallax__text">&quot; Uma hora antes da academia: cansaço e vontade de ficar em casa.<br>Uma hora depois da academia: aquele sentimento maravilhoso de dever cumprido.&quot;</p>
+          </div>
+          </div>
+      </div>
+    </section>
+
+    <!--Planos card-------------->
+    <section>
+      <div class="container">
+
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-6 text-muted">Conheça nossos planos</h1>
+        </div>
+          <div class="plans row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Básico</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$50<small class="text-muted fw-light">/mês</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Treino 2 dias da semana</li>
+                    <li>Acompanhamento de personal trainer</li>
+                    <li>Aulas de spinning inclusas</li>
+                    <li>Teste físico gratuito</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-custom">Contrate esse plano</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Pro</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$80<small class="text-muted fw-light">/mês</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Treino 4 dias da semana</li>
+                    <li>Acompanhamento com personal trainer e nutricionista</li>
+                    <li>Aulas de spinning e ioga inclusas</li>
+                    <li>Teste físico gratuito</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-custom">Contrate esse plano</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3">
+                  <h4 class="my-0 fw-normal">Enterprise</h4>
+                </div>
+                <div class="card-body">
+                  <h1 class="card-title pricing-card-title">R$130<small class="text-muted fw-light">/mês</small></h1>
+                  <ul class="list-unstyled mt-3 mb-4">
+                    <li>Treino 7 dias da semana</li>
+                    <li>Acompanhamento com personal trainer, nutricionista e psicóloga</li>
+                    <li>Aulas de spinning, ioga e zumba inclusas</li>
+                    <li>Treinamento funcional e cross-fit</li>
+                    <li>Teste físico gratuito</li>
+                  </ul>
+                  <button type="button" class="w-100 btn btn-lg btn-custom">Contrate esse plano</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+        
+    <!--Parallax-------------->
+    <div class="parallax-header1">
+      <div class="container">
+        <div class="header-content">
+          <p class="parallax__text">&quot; Uma hora antes da academia: cansaço e vontade de ficar em casa.<br>Uma hora depois da academia: aquele sentimento maravilhoso de dever cumprido.&quot;</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Form------------>
+    <form class="container mt-3 mb-3">
+      <div class="contact h1">
+        <h2 class="text-dark align-text-center">Quer saber mais? Entre em contato</h2>
+      </div>
+      <div class="mb-3">
+        <label for="insertName" class="form-label">Nome</label>
+        <input type="text" class="form-control" id="insertName">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">E-mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="form-text">Não compartilhamos seu e-mail com nínguem.</div>
+      </div>
+      <div class="mb-3">
+        <label for="insertMensage" class="form-label">Mensagem</label>
+        <input type="text" class="form-control" id="insertMensage">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Eu aceito receber notícias por e-mail com promoções.</label>
+      </div>
+      <button type="submit" class="btn btn-custom">Enviar</button>
+    </form>
+      
+    <footer class=" bg-dark py-3">
+      <div class="container">
+        <p class="float-end text-white"><a href="./index.html">Voltar ao inicio</a></p>
+        <p class="text-white">Fitness &copy; 2021 - Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

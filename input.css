@@ -1,0 +1,177 @@
+.nav__logo {
+    height: 40px;
+}
+
+.btn-custom{
+  background-color: #d52856 !important;
+  border-color: #d52856 !important;
+  color: white !important;
+}
+
+.btn-custom:hover {
+  background-color: #b52249 !important;
+  border-color: #b52249 !important;
+  color: white !important;
+}
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 0;
+  color: #5a5a5a;
+  }
+  
+  /* Carousel base class */
+  .carousel {
+    margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 32rem;
+  }
+  .carousel__img {
+     filter: brightness(50%);
+
+  }
+  .carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+
+  
+  .parallax-header{
+    background: #000;
+    width: 100%;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)
+    ), 
+    url(./img/trilha.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header-content{
+    
+  }
+
+  .parallax__text{
+    color: white;
+    text-align: center;
+  }
+
+  .marketing__img{
+      width: 140px;
+      height: 140px;
+  }
+  .marketing__img:hover{
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+}
+  .marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .marketing h2 {
+    font-weight: 400;
+  }
+  /* rtl:begin:ignore */
+  .marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+  }
+
+  .parallax-header1{
+    background: #000;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)
+    ), 
+    url(./img/treino-praia.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header-content{
+    padding: 5rem 0;
+  }
+
+  .parallax__text{
+    color: white;
+    text-align: center;
+  }
+  
+  .contact{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+
+  .contact h1 {
+    text-align: center;
+    font-weight: 100;
+  }
+
+  .contact form{
+    padding: 0 4rem;
+  }
+
+  .contact h5 {
+    font-size: small;
+    color: #626262;
+  }
+
+  .contact form input {
+    width: 100%;
+  }
+
+  #ver{
+    text-align: left;
+  }
+
+  #button-contact {
+    margin-top: 1rem;
+  }
+
+  .footer{
+    padding: 1rem 4rem;
+  }
+
+  .footer p,a{
+    color: white;
+    float:left; 
+    text-align:center
+  }
+
+
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+  
+    .featurette-heading {
+      font-size: 50px;
+    }
+  }
+  
+  @media (min-width: 62em) {
+    .featurette-heading {
+      margin-top: 7rem;
+    }
+  }
+  
